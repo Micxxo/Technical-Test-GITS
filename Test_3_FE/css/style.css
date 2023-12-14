@@ -1,0 +1,202 @@
+section {
+	width: 100%;
+	max-width: 1500px;
+	margin: auto;
+}
+
+.bg-header {
+	height: 100%;
+	background-color: antiquewhite;
+	background-image: url('../public/images/header.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-top: 450px;
+	padding-bottom: 50px;
+}
+
+.wa {
+	width: 60px;
+	height: 60px;
+}
+
+.separator-vertical {
+	height: 120px;
+	width: 3px;
+}
+
+.glassmorphin {
+	background: rgba(255, 255, 255, 0.25);
+	backdrop-filter: blur(10px);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.button-header {
+	width: 200px;
+	height: 45px;
+}
+
+.custom-scrollbar {
+	scrollbar-width: thin;
+	scrollbar-color: transparent transparent; /* Transparan */
+	/* Atau, pada browser yang mendukung */
+	/* Scrollbar kustom untuk Chrome, Edge, dan Safari */
+	scrollbar-width: none; /* Hapus scrollbar standar pada Firefox */
+	-ms-overflow-style: none;
+
+	scrollbar-width: 1px;
+	scrollbar-color: transparent transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+	width: 1px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+	background-color: transparent;
+}
+
+.bw-image {
+	filter: grayscale(100%);
+	transition: filter 0.3s ease;
+}
+
+.bw-image:hover {
+	filter: grayscale(0%);
+}
+
+#portoContainer {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	grid-gap: 20px;
+}
+
+#portoContainer > div {
+	overflow: hidden;
+	text-align: center;
+}
+
+#portoContainer img {
+	width: 100%;
+	height: auto;
+	max-width: 400px;
+}
+
+.servicesBtn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px;
+	cursor: pointer;
+	border-radius: 1000px;
+	border: 1px solid #eceef1;
+}
+
+.slider {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.slides {
+	display: flex;
+	gap: 20px;
+	transition: transform 0.5s ease;
+}
+
+.slide {
+	flex: 0 0 calc(30% - 10px);
+	padding: 20px;
+}
+
+.prev {
+	left: 0;
+}
+
+.next {
+	right: 0;
+}
+
+/* testimonial  */
+
+.slider-testi {
+	width: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.slides-testi {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+
+.slide-testi {
+	flex: 0 0 calc(100% - 10px);
+	transition: transform 0.5s ease-in-out;
+}
+
+.testi button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px;
+	cursor: pointer;
+	border-radius: 1000px;
+	border: 1px solid #c6c6c6;
+}
+
+.contact-input {
+	border-top: 0px;
+	border-right: 0px;
+	border-left: 0px;
+	border-bottom: 1.5px;
+	border-style: solid;
+	outline: none;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: transparent;
+	border-color: #dfecf1;
+}
+
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+	font-size: 1rem;
+	color: #667085;
+}
+
+.contact-textarea {
+	padding: 15px;
+	outline: none;
+	background-color: transparent;
+	border-top: 0px;
+	border-right: 0px;
+	border-left: 0px;
+	border-bottom: 1.5px;
+	border-style: solid;
+	border-color: #dfecf1;
+}
+
+.slider-certif {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.slides-certif {
+	display: flex;
+	gap: 20px;
+	transition: transform 0.5s ease;
+}
+
+.slide-certif {
+	flex: 0 0 calc(30% - 10px);
+	padding: 20px;
+}
